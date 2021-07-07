@@ -117,16 +117,16 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/DolomiteDefi",
+    href: "#",
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/DolomiteDefi",
+    href: "#",
   },
 ];
 
-export const MENU_HEIGHT = 74;
+export const MENU_HEIGHT = 60;
 export const MENU_ENTRY_HEIGHT = 48;
 export const SIDEBAR_WIDTH_FULL = 300;
 export const SIDEBAR_WIDTH_REDUCED = 56;

@@ -2240,15 +2240,15 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/DolomiteDefi",
+        href: "#",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/DolomiteDefi",
+        href: "#",
     },
 ];
-var MENU_HEIGHT = 74;
+var MENU_HEIGHT = 60;
 var MENU_ENTRY_HEIGHT = 48;
 var SIDEBAR_WIDTH_FULL = 300;
 var SIDEBAR_WIDTH_REDUCED = 56;
@@ -2842,7 +2842,7 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#200a00", input: "#200a00", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#332725", borderColor: "#E9EAEB", card: "#29150beb", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#200a00", input: "#200a00", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#2d2321", borderColor: "#E9EAEB", card: "#29150beb", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#3e3718", background: "#332725c9", backgroundDisabled: "#333a3e", contrast: "#FFFFFF", invertedContrast: "#352825e8", input: "#352825e8", primaryDark: "##0d0e0e", tertiary: "#2f2523eb", text: "#b7adf3", textDisabled: "#666171", textSubtle: "#97dea0", borderColor: "#9a8e3d", card: "#453636e8", gradients: {
