@@ -17,7 +17,6 @@ const StyledButtonMenu = styled.div<{ variant: Variants }>`
 
   & > button + button,
   & > a + a {
-    margin-left: 2px; // To avoid focus shadow overlap
     border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
     border-left: 1px solid ${({ theme }) => theme.colors.borderColor};
   }
