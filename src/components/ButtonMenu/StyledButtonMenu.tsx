@@ -18,11 +18,14 @@ const StyledButtonMenu = styled.div<{ variant: Variants }>`
   & > button + button,
   & > a + a {
     margin-left: 2px; // To avoid focus shadow overlap
+    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
+    border-left: 1px solid ${({ theme }) => theme.colors.borderColor};
   }
 
   & > button:first-child,
   & > a:first-child {
     border-top-left-radius: 6px;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
   }
 
   & > button:last-child,
