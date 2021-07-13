@@ -30,6 +30,7 @@ const MenuEntry = styled.div<Props>`
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
+  font-weight: ${({ isActive }) => isActive ? "bold" : "normal"};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme, isActive }) => isActive ? theme.colors.primary : theme.colors.text};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
@@ -44,6 +45,10 @@ const MenuEntry = styled.div<Props>`
   svg {
     fill: ${({ theme, isActive }) => isActive ? theme.colors.primary : theme.colors.text};
     margin-right: 15px;
+  }
+
+  div {
+    color: ${({ theme, isActive }) => isActive ? theme.colors.primary : theme.colors.text};
   }
 
   &:hover {
