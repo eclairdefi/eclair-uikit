@@ -6,7 +6,6 @@ var React = require('react');
 var styled = require('styled-components');
 var styledSystem = require('styled-system');
 var get = require('lodash/get');
-var polished = require('polished');
 var noop = require('lodash/noop');
 var debounce = require('lodash/debounce');
 var throttle = require('lodash/throttle');
@@ -185,19 +184,10 @@ var StyledButton = styled__default['default'].button(templateObject_1$2 || (temp
 }, function (_a) {
     var isLoading = _a.isLoading;
     return (isLoading ? 0.5 : 1);
-}, function (_a) {
-    _a.theme;
-    return polished.darken(0.09, getButtonVariantProp("background").toString());
-}, function (_a) {
-    _a.theme;
-    return polished.darken(0.09, getButtonVariantProp("background").toString());
-}, function (_a) {
+}, getButtonVariantProp("backgroundHover"), getButtonVariantProp("borderColorHover"), function (_a) {
     var theme = _a.theme;
     return theme.colors.secondary;
-}, function (_a) {
-    _a.theme;
-    return polished.darken(0.12, getButtonVariantProp("background").toString());
-}, getButtonVariantProp("boxShadowActive"), getDisabledStyles, removePointerEvents, styledSystem.space);
+}, getButtonVariantProp("backgroundActive"), getButtonVariantProp("boxShadowActive"), getDisabledStyles, removePointerEvents, styledSystem.space);
 StyledButton.defaultProps = {
     fullWidth: false,
     type: "button",
