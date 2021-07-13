@@ -399,8 +399,8 @@ var Icon$u = function (props) {
 };
 
 var Icon$v = function (props) {
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React.createElement("image", { width: 90, height: 90, href: "/images/egg/9.png" })));
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 48 26" }, props),
+        React.createElement("image", { width: 48, height: 26, href: "/images/egg/9.png" })));
 };
 
 var Icon$w = function (props) {
@@ -2383,7 +2383,7 @@ var PanelFooter = function (_a) {
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React.createElement(Icon$v, { width: "24px", mr: "8px" }),
-                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
+                React.createElement(Text, { color: "#A45B32", bold: true, fontSize: "14px" }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
                 var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };

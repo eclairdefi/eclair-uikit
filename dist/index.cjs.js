@@ -412,8 +412,8 @@ var Icon$u = function (props) {
 };
 
 var Icon$v = function (props) {
-    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
-        React__default['default'].createElement("image", { width: 90, height: 90, href: "/images/egg/9.png" })));
+    return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 48 26" }, props),
+        React__default['default'].createElement("image", { width: 48, height: 26, href: "/images/egg/9.png" })));
 };
 
 var Icon$w = function (props) {
@@ -2396,7 +2396,7 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(SocialEntry, null,
             cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
                 React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
+                React__default['default'].createElement(Text, { color: "#A45B32", bold: true, fontSize: "14px" }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
                 var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
