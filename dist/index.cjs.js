@@ -2297,23 +2297,23 @@ var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateOb
     var secondary = _a.secondary, theme = _a.theme;
     return (secondary ? theme.colors.background : "transparent");
 }, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.text;
+    var theme = _a.theme, isActive = _a.isActive;
+    return isActive ? theme.colors.primary : theme.colors.text;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
 }, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.text;
+    var theme = _a.theme, isActive = _a.isActive;
+    return isActive ? theme.colors.primary : theme.colors.text;
 }, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.textSubtle;
+    var theme = _a.theme, isActive = _a.isActive;
+    return isActive ? theme.colors.primaryBright : theme.colors.textSubtle;
 }, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.textSubtle;
+    var theme = _a.theme, isActive = _a.isActive;
+    return isActive ? theme.colors.primaryBright : theme.colors.textSubtle;
 }, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.textSubtle;
+    var theme = _a.theme, isActive = _a.isActive;
+    return isActive ? theme.colors.primaryBright : theme.colors.textSubtle;
 }, rainbowAnimation, function (_a) {
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;

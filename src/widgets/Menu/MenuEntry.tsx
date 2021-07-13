@@ -31,7 +31,7 @@ const MenuEntry = styled.div<Props>`
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme, isActive }) => isActive ? theme.colors.primary : theme.colors.text};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
 
   a {
@@ -42,17 +42,17 @@ const MenuEntry = styled.div<Props>`
   }
 
   svg {
-    fill: ${({ theme }) => theme.colors.text};
+    fill: ${({ theme, isActive }) => isActive ? theme.colors.primary : theme.colors.text};
     margin-right: 15px;
   }
 
   &:hover {
-    color: ${({ theme }) => theme.colors.textSubtle};
+    color: ${({ theme, isActive }) => isActive ? theme.colors.primaryBright : theme.colors.textSubtle};
     div {
-      color: ${({ theme }) => theme.colors.textSubtle};
+      color: ${({ theme, isActive }) => isActive ? theme.colors.primaryBright : theme.colors.textSubtle};
     }
     svg {
-      fill: ${({ theme }) => theme.colors.textSubtle};
+      fill: ${({ theme, isActive }) => isActive ? theme.colors.primaryBright : theme.colors.textSubtle};
     }
   }
 
