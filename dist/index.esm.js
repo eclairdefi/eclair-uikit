@@ -2,6 +2,7 @@ import React, { Children, isValidElement, cloneElement, useRef, useEffect, useSt
 import styled, { keyframes, css, useTheme, createGlobalStyle } from 'styled-components';
 import { space, flexbox, layout } from 'styled-system';
 import get from 'lodash/get';
+import { darken } from 'polished';
 import noop from 'lodash/noop';
 import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
@@ -171,10 +172,19 @@ var StyledButton = styled.button(templateObject_1$2 || (templateObject_1$2 = __m
 }, function (_a) {
     var isLoading = _a.isLoading;
     return (isLoading ? 0.5 : 1);
-}, getButtonVariantProp("backgroundHover"), getButtonVariantProp("borderColorHover"), function (_a) {
+}, function (_a) {
+    _a.theme;
+    return darken(0.09, getButtonVariantProp("background").toString());
+}, function (_a) {
+    _a.theme;
+    return darken(0.09, getButtonVariantProp("background").toString());
+}, function (_a) {
     var theme = _a.theme;
     return theme.colors.secondary;
-}, getButtonVariantProp("backgroundActive"), getButtonVariantProp("boxShadowActive"), getDisabledStyles, removePointerEvents, space);
+}, function (_a) {
+    _a.theme;
+    return darken(0.12, getButtonVariantProp("background").toString());
+}, getButtonVariantProp("boxShadowActive"), getDisabledStyles, removePointerEvents, space);
 StyledButton.defaultProps = {
     fullWidth: false,
     type: "button",

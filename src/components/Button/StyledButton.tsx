@@ -1,5 +1,6 @@
 import styled, { DefaultTheme } from "styled-components";
 import { space } from "styled-system";
+import { darken } from 'polished'
 import { ButtonProps, ButtonThemeVariant, variants } from "./types";
 
 type ThemedProps = {
@@ -69,8 +70,8 @@ const StyledButton = styled.button<ButtonProps>`
   opacity: ${({ isLoading }) => (isLoading ? 0.5 : 1)};
 
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
-    background-color: ${getButtonVariantProp("backgroundHover")};
-    border-color: ${getButtonVariantProp("borderColorHover")};
+    background-color: ${({ theme }) => darken(0.09, getButtonVariantProp("background").toString())};
+    border-color: ${({ theme }) => darken(0.09, getButtonVariantProp("background").toString())};
   }
 
   &:focus:not(:active) {
@@ -78,7 +79,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 
   &:active {
-    background-color: ${getButtonVariantProp("backgroundActive")};
+    background-color: ${({ theme }) => darken(0.12, getButtonVariantProp("background").toString())};
     box-shadow: ${getButtonVariantProp("boxShadowActive")};
   }
 
