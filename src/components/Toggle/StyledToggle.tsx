@@ -4,12 +4,12 @@ export const Handle = styled.div`
   background-color: ${({ theme }) => theme.toggle.handleBackground};
   border-radius: 50%;
   cursor: pointer;
-  height: 32px;
-  left: 4px;
+  height: 16px;
+  left: 2px;
   position: absolute;
-  top: 4px;
+  top: 2px;
   transition: left 200ms ease-in;
-  width: 32px;
+  width: 16px;
   z-index: 1;
 `;
 
@@ -41,10 +41,11 @@ const StyledToggle = styled.div<{ checked: boolean }>`
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
   display: inline-flex;
-  height: 40px;
+  height: 23px;
   position: relative;
   transition: background-color 200ms;
-  width: 72px;
+  width: 55px;
+  border: 1px solid ${({ theme }) => theme.colors.borderColor};
 `;
 
 export default StyledToggle;
